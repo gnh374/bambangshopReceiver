@@ -94,3 +94,14 @@ This is the place for you to write reflections:
 - variable static pada Rust bersifat immutable karena Rust lebih mengutamakan keamanan saat kompilasi dan menjamin thread safety saat multi threading 
 
 #### Reflection Subscriber-2
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+
+- lib.rs digunakan untuk mendefinisikan struktur dan fungsi utama dari library create. Lib.rs digunakan untuk deklarasi modul, mengeskpor fungsi, struktur data, dan tipe lain dari krate dengan menggunakan kata kunci pub, serta inisialisasi krate, misalnya  inisialisasi variabel statis, konfigurasi, atau pendaftaran penanganan sinyal.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+
+- Ya, observer pattern memudahkan saya untuk menambahkan subscriber. Hal ini dikarenakan saya hanya perlu menambahkan subscriber baru yang mensubscribe suatu produk ke dalam list. Jika lebih dari 1 main app, maka tiap main app akan memiliki observer patternnya sendiri sehingga tidak akan menjadi masalah dalam penambahan subscriber karena prosesnya tetap sama.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project).
+
+- Ya ,menurut saya postman sangat berguna karena dapat membantu saya memastikan bahwa endpoint API saya mengembalikan response sesuai yang saya harapkan. Fitur collection sangat membantu saya untuk menyimpan dan mengorganize request untuk test yang ingin saya jalankan 
